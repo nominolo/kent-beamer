@@ -1,0 +1,149 @@
+\documentclass[sans,mathserif]{beamer}
+
+\usepackage{graphicx} % graphics
+\usepackage{epsfig} % eps graphics
+\usepackage{hyperref} % urls
+\usepackage{booktabs, caption} % table styling
+
+% suppress navigation bar
+\beamertemplatenavigationsymbolsempty
+
+\usepackage{fouriernc}
+\usepackage[T1]{fontenc}
+\usepackage{helvet}
+%% \usepackage{cmbright}
+\usepackage{eulervm}
+
+%% \usefonttheme{serif}
+
+
+\mode<presentation>
+{
+  \usetheme{kent}
+  \setbeamercovered{transparent}
+  \setbeamertemplate{items}[circle]
+}
+
+\title{A Survey of Elements in Whoville}
+\author{Samantha Sample \\ \texttt{sam@example.com}}
+\institute[The Institute of Advanced Study]
+{
+Department of Chemistry \\
+Whoville College \\
+}
+
+\date{\today}
+
+\begin{document}
+
+\section{Introduction}
+
+%% -------------------------------------------------------------------
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+%% -------------------------------------------------------------------
+
+\begin{frame}{A sample slide}
+
+A displayed formula:
+
+\[
+  \int_{-\infty}^\infty e^{-x^2} \, dx = \sqrt{\pi}
+\]
+
+An itemized list:
+
+\begin{itemize}
+  \item itemized item 1
+  \item itemized item 2
+  \item itemized item 3
+\end{itemize}
+
+\begin{theorem}
+  In a right triangle, the square of hypotenuse equals
+  the sum of squares of two other sides.
+\end{theorem}
+
+\end{frame}
+
+%% -------------------------------------------------------------------
+
+\begin{frame}{Theorems and such}
+
+\begin{definition}
+  A triangle that has a right angle is called
+  a \emph{right triangle}.
+\end{definition}
+
+\begin{theorem}
+  In a right triangle, the square of the hypotenuse
+  equals the sum of the squares of the two other sides.
+\end{theorem}
+
+\begin{proof}
+  We leave the proof as an exercise to our astute reader.
+  We also suggest that the reader generalize the proof to
+  non-Euclidean geometries.
+\end{proof}
+
+\end{frame}
+
+%% -------------------------------------------------------------------
+
+\begin{frame}{Outline of the talk} 
+ 
+\begin{itemize} 
+  \item Introduction 
+  \pause 
+  \item Statement of the main theorem 
+  \pause 
+  \item Technical lemmata 
+  \pause 
+  \item Proof of the main theorem 
+  \pause 
+  \item Conclusions 
+\end{itemize} 
+
+\end{frame}
+
+%% -------------------------------------------------------------------
+
+\begin{frame}{Fermat's Last Theorem} 
+ 
+In this talk I will give a very elementary proof of the 
+theorem.  I am surprised that no one else has thought of 
+this before. 
+\medskip 
+ 
+\pause 
+ 
+Fermat's Last Theorem says that the equation 
+\[ 
+  x^2 + y^2 = z^2 
+\] 
+has no solution in the set of natural numbers. 
+\medskip 
+ 
+\pause 
+ 
+This is not true.  After a lengthy calculation on the 
+department's Linux machines, I have verified that within 
+the numerical accuracy of the Pentium-4 processor, we have: 
+\[ 
+  5000^2 + 12000^2 = 13000^2 
+\] 
+ 
+\end{frame}
+
+%% -------------------------------------------------------------------
+
+%% -------------------------------------------------------------------
+
+%% -------------------------------------------------------------------
+
+
+
+\end{document}

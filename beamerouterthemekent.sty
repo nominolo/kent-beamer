@@ -1,0 +1,39 @@
+% This program can be redistributed and/or modified under the terms
+% of the GNU Public License, version 3.
+
+\mode<presentation>
+
+% color definitions
+\definecolor{kentblue}{cmyk}{1.0,0.58,0,0.21}
+\definecolor{kentpink}{cmyk}{0,1.0,0.13,0.17}
+\definecolor{gray80}{rgb}{0.2,0.2,0.2}
+
+% footer styling
+\usebeamercolor[bg]{frametitle}
+\setbeamercolor{frametitle}{bg=kentblue}
+\setbeamercolor{frametitle}{fg=white}
+\setbeamercolor{title}{fg=kentpink}
+\setbeamercolor{block title}{fg=kentpink}
+\setbeamercolor{section in head}{bg=black}
+\setbeamercolor{palette secondary}{fg=white,bg=kentblue}
+\setbeamercolor{palette primary}{bg=gray80,fg=white}
+\setbeamercolor{palette tertiary}{bg=black,fg=white}
+\setbeamercolor{palette quaternary}{bg=black,fg=white}
+
+\defbeamertemplate*{footline}{kenttheme}
+{
+  \leavevmode%
+  \hbox{%
+  %% \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.25ex,dp=1ex,center]{section in footer}%
+  %%   \insertsectionhead
+  %% \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=\paperwidth,ht=2.25ex,dp=1ex,center]{pagenumber in footer}%
+   \insertframenumber{} / \inserttotalframenumber\hspace*{2ex} 
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+
+\setbeamersize{text margin left=1em,text margin right=1em}
+
+\mode
+<all>
